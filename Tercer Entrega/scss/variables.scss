@@ -1,0 +1,15 @@
+$indexPage_bkg:linear-gradient(to right top, white,#0fda3b);
+$contactoPage_bkg:linear-gradient(to top right, #045224,whitesmoke);
+$ubicacion_bkg:linear-gradient(to top right, #3a2507,#f5e720);
+$form_bkg:#24303c;
+$estilo_base: (
+  bkg_color:  rgb(18, 97, 18),
+  gradiente_campo: radial-gradient(circle at 87.5% 12.5%, #b6ff43 0, #95ff45 16.67%, #69fa45 33.33%, #0ced43 50%, #00e044 66.67%, #00d54b 83.33%, #00ce56 100%),
+  centro: center, 
+);
+@mixin flex-mix($Direction, $Justify) {
+    display:flex;
+    flex-direction:$Direction;
+    justify-content: $Justify;
+ };
+ 
