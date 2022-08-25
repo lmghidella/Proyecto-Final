@@ -89,9 +89,11 @@
     height: 200px;
     filter: grayscale(50%);
 }
+
 .carousel-control-prev-icon, .carousel-control-next-icon {
-    height: 40px;
-    width: 40px;
+
+    height: 50px;
+    width: 50px;
     outline: black;
     background-color: rgba(0, 0, 0, 0.8);
     background-size: 100%, 100%;
@@ -99,34 +101,57 @@
     border: 1px solid black;
 }
 .carousel-caption {
-    position: absolute; 
-    padding: 5px;
-    color: whitesmoke;
+  
+    position: absolute;
+    //padding: 5px;
+    -webkit-text-stroke: 1px white;
+    top: 10px;
+    color: black;
+    font-size: 26px;
     text-align:center;
     background-color: rgba(83, 79, 79, 0.4); /* Añadir para conseguir el fondo con opacidad */
     font-weight: bold;
-      
+    h5{
+    color: black;
+    font-size: 26px; 
+    -webkit-text-stroke: 1px white;
+    font-weight: bold;
+    text-transform: uppercase;
+    }
+    p{
+        font-weight:bold;
+    }
 }
 .productos{
     background-image: radial-gradient(circle at 29.63% 20.91%, #8c7d0f 0, #8a710b 10%, #86640a 20%, #7e5609 30%, #724709 40%, #643708 50%, #552805 60%, #471c00 70%, #3b1200 80%, #310900 90%, #2a0000 100%);
+    padding: 0;
 }
+.primer-fila{
+    margin:0px;
+  
+}
+.segunda-fila{
+    margin:0px; 
+}
+
 
 
 /////////FIN CARROUSEL----------------------------------------------------------------
 /// TEXTO TECNO AGRO
 
 .textoTecnoAgro{
- background-image: map-get($estilo_base, gradiente_campo)
-    p{
-        height: 100%;
+    background-image: radial-gradient(circle at 87.5% 12.5%, #b6ff43 0, #95ff45 16.67%, #69fa45 33.33%, #0ced43 50%, #00e044 66.67%, #00d54b 83.33%, #00ce56 100%); 
+    display:flex;
+    flex-flow:column;
+    justify-content: space-between;
+    padding-left: 12px;
+   p{    
         text-align: left;
-        padding-left: 3%;
     }
-    ul{
-        height: 100%;
+    ul{     
         text-align: left;
-        padding-left: 5%;
     }
+   
 }
 //----------------------------------------------------------
 
@@ -140,4 +165,14 @@
      p{
         color:blue;
      }
+}
+//----------------------------------------------
+//SECCIÓN PRODUCTOS
+.fijar-altura
+{
+    height:100vh;
+}
+.main
+{
+    height:100vh;
 }

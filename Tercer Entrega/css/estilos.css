@@ -8,7 +8,9 @@
   padding: 0; }
 
 .container-fluid {
-  background: linear-gradient(to right top, white, #0fda3b); }
+  background: linear-gradient(to right top, white, #0fda3b); 
+}
+
 
 header {
   background-color: #126112;
@@ -20,18 +22,23 @@ header {
   top: 0;
   /*Z-INDEX*/
   z-index: 2; }
+  header nav ul li a {
+    color: orange !important; }
+  header .navbar, header .navbar-expand-lg, header .bg-light {
+    padding: 0; }
+    header .navbar .menu-desplegable, header .navbar-expand-lg .menu-desplegable, header .bg-light .menu-desplegable {
+      background-color: #126112; }
+      header .navbar .menu-desplegable .navbar-toggler, header .navbar-expand-lg .menu-desplegable .navbar-toggler, header .bg-light .menu-desplegable .navbar-toggler {
+        margin-right: 10px; }
 
 .logo {
   margin-left: 20px; }
 
 .navbar-nav {
-  background-color: #126112 !important;
+  background-color: #126112;
   margin: 0%; }
 
-.container-fluid header nav ul li a {
-  color: orange !important; }
-
-.navbar-toggler-icon {
+#chota {
   background-color: #126112 !important; }
 
 /* -----------------------Clases para para pagina de contacto------------------------*/
@@ -110,8 +117,8 @@ header {
   filter: grayscale(50%); }
 
 .carousel-control-prev-icon, .carousel-control-next-icon {
-  height: 40px;
-  width: 40px;
+  height: 50px;
+  width: 50px;
   outline: black;
   background-color: rgba(0, 0, 0, 0.8);
   background-size: 100%, 100%;
@@ -120,25 +127,43 @@ header {
 
 .carousel-caption {
   position: absolute;
-  padding: 5px;
-  color: whitesmoke;
+  -webkit-text-stroke: 1px white;
+  top: 10px;
+  color: black;
+  font-size: 26px;
   text-align: center;
   background-color: rgba(83, 79, 79, 0.4);
   /* Añadir para conseguir el fondo con opacidad */
   font-weight: bold; }
+  .carousel-caption h5 {
+    color: black;
+    font-size: 26px;
+    -webkit-text-stroke: 1px white;
+    font-weight: bold;
+    text-transform: uppercase; }
+  .carousel-caption p {
+    font-weight: bold; }
 
 .productos {
-  background-image: radial-gradient(circle at 29.63% 20.91%, #8c7d0f 0, #8a710b 10%, #86640a 20%, #7e5609 30%, #724709 40%, #643708 50%, #552805 60%, #471c00 70%, #3b1200 80%, #310900 90%, #2a0000 100%); }
+  background-image: radial-gradient(circle at 29.63% 20.91%, #8c7d0f 0, #8a710b 10%, #86640a 20%, #7e5609 30%, #724709 40%, #643708 50%, #552805 60%, #471c00 70%, #3b1200 80%, #310900 90%, #2a0000 100%);
+  padding: 0; }
+
+.primer-fila {
+  margin: 0px; }
+
+.segunda-fila {
+  margin: 0px; }
 
 .textoTecnoAgro {
-  background-image: radial-gradient(circle at 87.5% 12.5%, #b6ff43 0, #95ff45 16.67%, #69fa45 33.33%, #0ced43 50%, #00e044 66.67%, #00d54b 83.33%, #00ce56 100%) p;
-    background-image-height: 100%;
-    background-image-text-align: left;
-    background-image-padding-left: 3%; }
+  background-image: radial-gradient(circle at 87.5% 12.5%, #b6ff43 0, #95ff45 16.67%, #69fa45 33.33%, #0ced43 50%, #00e044 66.67%, #00d54b 83.33%, #00ce56 100%);
+  display: flex;
+  flex-flow: column;
+  justify-content: space-between;
+  padding-left: 12px; }
+  .textoTecnoAgro p {
+    text-align: left; }
   .textoTecnoAgro ul {
-    height: 100%;
-    text-align: left;
-    padding-left: 5%; }
+    text-align: left; }
 
 .servicios {
   opacity: 0.8;
@@ -148,6 +173,12 @@ header {
   .servicios p {
     color: blue; }
 
+.fijar-altura {
+  height: 100vh; }
+  main{
+    height: 100vh;
+  }
+
 /* SECCION FOOTER */
 footer {
   background-color: #0d4d17;
@@ -156,7 +187,8 @@ footer {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  padding-top: 10px; }
+  padding-top: 10px;
+  margin-top: 10px; }
   footer ul li {
     list-style-type: none; }
     footer ul li a {
@@ -177,3 +209,8 @@ footer {
   position: fixed;
   bottom: 10px;
   right: 10px; }
+
+  .body
+{
+    height: 500px;
+}
